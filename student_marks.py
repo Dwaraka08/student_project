@@ -7,7 +7,7 @@ st.title("Student Marks Prediction")
 
 Hours=st.text_input("Enter the number of hours you study:")
 
-with open(r"C:\Users\my pc\s_project.dill", "rb") as f:
+with open(r"s_project.dill", "rb") as f:
     model = dill.load(f)
 
 if st.button("prediction"):
