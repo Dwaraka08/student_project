@@ -12,5 +12,6 @@ with open(r"s_project.dill", "rb") as f:
 
 if st.button("prediction"):
     data=[[Hours]]
+    data_array=np.array(data).reshape(1,-1)
     prediction=model.predict(data)
     st.write(prediction)
